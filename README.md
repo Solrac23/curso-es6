@@ -6,7 +6,7 @@
 - *Nodejs*
 - *React*
 - *React-Native*
-**etc.**
+**etc. Além de converter as features do ES6 para que os navegadores não entendem.**
 ## 1. Instalando babel
 - yarn add @babel/cli: permite alterar algumas linhas de comando como o yarn.
 - yarn add @babel/present-env
