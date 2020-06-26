@@ -12,6 +12,9 @@ function mostraNome({ nome }){
 }
 mostraNome(usuario)
 
+
+
+
 const arr = [1, 3, 4, 5, 8, 9]
 
 // map serve para percorrer o vetor e retornar algo de dentro
