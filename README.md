@@ -12,7 +12,7 @@ O webpack é como se fosse um serviço que, permite trabalhar
 
 ### 1. Instalando babel
 - yarn add @babel/cli: permite alterar algumas linhas de comando como o yarn.
-- yarn add @babel/present-env
+- yarn add @babel/preset-env
 
 ### 2. Instalando WebPack
 - yarn add webpack webpack-cli -D
