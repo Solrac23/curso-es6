@@ -1,18 +1,23 @@
 module.exports = {
-  entry: './main.js',
+  entry: ['@babel/polyfill','./src/main.js'],
   output: {
-    path: __dirname, // Caminho do arquivo no caso o diretorio.
-    filename: 'bundle.js' // nome do arquivo
+    path: __dirname + '/public',
+    filename: 'bundle.js',
+  },
+  devServer:{
+    // será o caminho para abrir o servidor da aplicação
+    contentBase: __dirname + '/public'
   },
   module: {
-    rules: [
+    rules:[
       {
-        test: /\.js$/, // determina somente arquivos js
-        exclude: /node_modules/, // excluir o node_modules, para que o babel não execute nenhum arquivo do node
+        test: /\.js$/,
+        exclude: /node_modules/,
         use: {
-          loader: 'babel-loader' // babel é um loader
-        }
+          loader: 'babel-loader',
+        },
       }
     ],
   },
 }
+  
